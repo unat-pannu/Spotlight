@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+form .container{
+    height:90%;
+}
+footer{position:sticky;bottom:0;width:100%;}
+</style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <div class="menu-items">
+            <img src="logo.png">
+            <a href="index.html"><button>Home</button></a>
+            <a href="jobs.html"><button>Browse Jobs</button></a>
+            <a href="talent.html"><button>Browse Talent</button></a>
+            </div>
+            <div class="forms-menu">
+                <a href="signin.html"><button>Sign in</button></a>
+                <a href="signup.html"> <button id="join">Join Spotlight</button></a>
+            </div>
+        </ul>
+    </div>
+<form action="" method="post">
+  <div class="container">
+    <div class="container-text">
+    <h1 class="headings">Sign Up to Spotlight</h1>
+    <p>Fill in this form to create an account.</p>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" minlength=8 required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+    </label>
+    <p>By creating an account you agree to our <a href="#" style="color:white">Terms of Service & Privacy Policy</a>.</p>
+      <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+      <button type="submit" class="signupbtn" name="signup_submit">Sign Up</button>
+    </div>
+  </div>
+</form>
+<footer>
+    <p>&copy; 2024 Spotlight. All rights reserved.</p>
+</footer>
+</body>
+<html>

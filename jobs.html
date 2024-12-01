@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight - Browse Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Girassol&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <div class="menu-items">
+            <img src="logo.png">
+            <a href="index.html"><button>Home</button></a>
+            <a href="jobs.html"><button>Browse Jobs</button></a>
+            <a href="talent.html"><button>Browse Talent</button></a>
+            </div>
+            <div class="forms-menu">
+                <a href="signin.html"><button>Sign in</button></a>
+                <a href="signup.html"> <button id="join">Join Spotlight</button></a>
+            </div>
+        </ul>
+    </div>
+    <div class="find-jobs">
+        <h1>Find your next job and elevate your career</h1>
+    </div>
+    <div class="scroll-container">
+        <div class="card">
+            <img src="https://d3uscstcbhvk7k.cloudfront.net/static/4270c94cce2879365c0f.jpg" alt="Actors">
+            <div class="card-content">
+              <div class="card-title">For Actors</div>
+              <div class="card-description">Audition for screen and stage jobs</div>
+            </div>
+          </div>
+      <div class="card">
+        <img src="https://d3uscstcbhvk7k.cloudfront.net/static/7fc8e260d3fbb947fe77.jpg" alt="Voiceover Artists">
+        <div class="card-content">
+          <div class="card-title">For Voiceover Artists</div>
+          <div class="card-description">Book remote and in-studio voice gigs</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://d3uscstcbhvk7k.cloudfront.net/static/3ac737bc22fda0dd5a95.jpg" alt="Creative Freelancers">
+        <div class="card-content">
+          <div class="card-title">For Creative Freelancers + Crew</div>
+          <div class="card-description">Get hired and grow your network</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://d3uscstcbhvk7k.cloudfront.net/static/0e977513d410fd056962.jpg" alt="Influencers">
+        <div class="card-content">
+          <div class="card-title">For Influencers + Content Creators</div>
+          <div class="card-description">Find new clients</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://d3uscstcbhvk7k.cloudfront.net/static/b8350fdfd537b3ace312.jpg" alt="Models">
+        <div class="card-content">
+          <div class="card-title">For Models</div>
+          <div class="card-description">Book modeling jobs</div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="browse">
+        <h1>Browse all open audition opportunities</h1>
+        <p>Discover casting calls across all types of productions.</p>
+    <a><button id="cast">View Jobs</button></a>
+    </div>
+    <div class="jobs-container">
+        <h1 id="heading-text">Featured jobs</h1>
+        <div class="job-section">
+            <div class="category-label">
+                <p>A</p>
+                <p>C</p>
+                <p>T</p>
+                <p>O</p>
+                <p>R</p>
+                <p>S</p>
+            </div>
+                <div class="scrollable">
+                    <div class="job-card">
+                        <h3>Lead Actor - Feature Film</h3>
+                        <p><strong>Location:</strong> Los Angeles, CA</p>
+                        <p><strong>Pay:</strong> $2,500/day</p>
+                        <br>
+                        <label for="modal-toggle1">View Details</label>
+                        <input type="checkbox" id="modal-toggle1">
+                        <br><br>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Lead Actor - Feature Film</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle1" class="close-button">Close</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="job-card">
+                        <h3>Supporting Role - Drama</h3>
+                        <p><strong>Location:</strong> New York, NY</p>
+                        <p><strong>Pay:</strong> $1,000/day</p>
+                        <br>
+                        <label for="modal-toggle2">View Details</label>
+                        <input type="checkbox" id="modal-toggle2">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Supporting Role - Drama</h1>
+                                <p><strong>Location:</strong> New York, NY</p>
+                                <p><strong>Pay:</strong> $1,000/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle2" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Supporting Actor - Comedy</h3>
+                        <p><strong>Location:</strong> New York, NY</p>
+                        <p><strong>Pay:</strong> $1,000/day</p>
+                        <br>
+                        <label for="modal-toggle3">View Details</label>
+                        <br><br>
+                        <input type="checkbox" id="modal-toggle3">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Supporting Actor for Comedy Pilot</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle3" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Lead Role - Drama</h3>
+                        <p><strong>Location:</strong> London, England</p>
+                        <p><strong>Pay:</strong> $1,000/day</p>
+                        <br>
+                        <label for="modal-toggle4">View Details</label>
+                        <input type="checkbox" id="modal-toggle4">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Lead Role in a Drama Series</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle4" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Lead Actress - Horror Film</h3>
+                        <p><strong>Location:</strong> New York, NY</p>
+                        <p><strong>Pay:</strong> $1,000/day</p>
+                        <br>
+                        <label for="modal-toggle5">View Details</label>
+                        <input type="checkbox" id="modal-toggle5">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Lead Actress for Horror Film</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle5" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-section">
+                <div class="category-label">
+                    <br>
+                    <p>V</p>
+                    <p>O</p>
+                    <p>I</p>
+                    <p>C</p>
+                    <p>E</p>
+                </div>
+                <div class="scrollable">
+                    <div class="job-card">
+                        <h3>Voice Actor for Animated Feature Film</h3>
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Pay:</strong> $500/session</p>
+                        <br>
+                        <label for="modal-toggle6">View Details</label>
+                        <input type="checkbox" id="modal-toggle6">
+                        <br><br>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Voice Actor for Animated Feature Film</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle6" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Podcast Narrator for Psychological Thriller</h3>
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Pay:</strong> $300/session</p>
+                        <br>
+                        <label for="modal-toggle7">View Details</label>
+                        <br><br>
+                        <input type="checkbox" id="modal-toggle7">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Podcast Narrator for Psychological Thriller</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                                
+                                <button>Apply Now</button>
+                                <label for="modal-toggle7" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Voiceover Artist for Commercial Campaign</h3>
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Pay:</strong> $300/session</p>
+                        <br>
+                        <label for="modal-toggle8">View Details</label>
+                        <input type="checkbox" id="modal-toggle8">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Voiceover Artist for Commercial Campaign</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> Looking for a professional voiceover artist to narrate a commercial campaign for a new product launch. The voice should be warm, friendly, and engaging.</p>
+                                <p><strong>Requirements:</strong> Experience in commercial voiceovers, neutral accent preferred. 2-3 samples of previous work required.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle8" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Voice of Villain for Video Game</h3>
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Pay:</strong> $300/session</p>
+                        <br>
+                        <label for="modal-toggle9">View Details</label>
+                        <br><br>
+                        <input type="checkbox" id="modal-toggle9">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Voice of Villain for Video Game</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle9" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Voiceover Artist for E-Learning Platform</h3>
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Pay:</strong> $300/session</p>
+                        <br>
+                        <label for="modal-toggle10">View Details</label>
+                        <input type="checkbox" id="modal-toggle10">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>E-Learning Voiceover Artist</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle10" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-section">
+                <div class="category-label">
+                    <p><br></p>
+                    <p>C</p>
+                    <p>R</p>
+                    <p>E</p>
+                    <p>W</p>
+                </div>
+                <div class="scrollable">
+                    <div class="job-card">
+                        <h3>Cinematographer</h3>
+                        <p><strong>Location:</strong> Vancouver, Canada</p>
+                        <p><strong>Pay:</strong> $5,000/project</p>
+                        <br>
+                        <label for="modal-toggle11">View Details</label>
+                        <input type="checkbox" id="modal-toggle11">
+                        <br><br>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Cinematographer for Independent Film</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle11" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Sound Engineer</h3>
+                        <p><strong>Location:</strong> Los Angeles, CA</p>
+                        <p><strong>Pay:</strong> $2,000/project</p>
+                        <br>
+                        <label for="modal-toggle12">View Details</label>
+                        <input type="checkbox" id="modal-toggle12">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Sound Engineer</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle12" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Production Assistant</h3>
+                        <p><strong>Location:</strong> Los Angeles, CA</p>
+                        <p><strong>Pay:</strong> $2,000/project</p>
+                        <br>
+                        <label for="modal-toggle13">View Details</label>
+                        <br><br>
+                        <input type="checkbox" id="modal-toggle13">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Production Assistant for TV Show</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle13" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Editor for Documentary</h3>
+                        <p><strong>Location:</strong> Los Angeles, CA</p>
+                        <p><strong>Pay:</strong> $2,000/project</p>
+                        <br>
+                        <label for="modal-toggle14">View Details</label>
+                        <input type="checkbox" id="modal-toggle14">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Editor for Documentary</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle14" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-card">
+                        <h3>Gaffer for Feature Film</h3>
+                        <p><strong>Location:</strong> Los Angeles, CA</p>
+                        <p><strong>Pay:</strong> $2,000/project</p>
+                        <br>
+                        <label for="modal-toggle15" class="modal-toggle">View Details</label>
+                        <input type="checkbox" id="modal-toggle15">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <h1>Gaffer for Feature Film</h1>
+                                <p><strong>Location:</strong> Los Angeles, CA</p>
+                                <p><strong>Pay:</strong> $2,500/day</p>
+                                <p><strong>Project Description:</strong> A thrilling lead role in a major feature film. The actor will play a dynamic character with complex emotional depth, requiring experience in action and dramatic scenes.</p>
+                                <p><strong>Requirements:</strong> Prior experience in film or theater. Strong improvisational skills and ability to work under pressure.</p>
+                                <p><strong>Additional Info:</strong> Shooting starts in June. The role requires the actor to be available for at least three months.</p>
+                        
+                                <h3>How to Apply:</h3>
+                                <p>Submit a headshot and reel to <a href="mailto:casting@spotlight.com">casting@spotlight.com</a>. Please include a cover letter explaining your experience and why you are a good fit for the role.</p>
+                        
+                                <button>Apply Now</button>
+                                <label for="modal-toggle15" class="close-button">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Spotlight. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+    
