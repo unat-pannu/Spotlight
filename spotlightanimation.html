@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>Spotlight Casting Animation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'League Spartan', sans-serif;
+            height: 2000px; 
+            background-color:white;
+        }
+        canvas {
+            display: block;
+            cursor:none;
+        }
+        .menu{
+            display:none;
+            width:100%;
+        }
+        .forms-menu{
+            margin-right:20px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="menu" id="menu">
+            <ul>
+                <div class="menu-items">
+                <a href="spotlightanimation.html"><img src="logo.png"></a>
+                <a href="index.html"><button>Home</button></a>
+                <a href="jobs.html"><button>Browse Jobs</button></a>
+                <a href="talent.html"><button>Browse Talent</button></a>
+                </div>
+                <div class="forms-menu">
+                    <a href="signin.html"><button>Sign in</button></a>
+                    <a href="signup.html"> <button id="join">Join Spotlight</button></a>
+                </div>
+            </ul>
+        </div>
+    <canvas id="spotlightCanvas"></canvas>
+    <script src="script.js"></script>
+    <br>
+    <div class="bigger-container">
+    <center><h1>Join the Spotlight Community</h1></center>
+    <div class="container" id="castingFormContainer">
+    
+        <form id="castingForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="First and Last Name">
+            <label for="location">Your Location</label>
+            <button type="button" onclick="getLocation()">Allow Geolocation</button>
+            <input type="text" id="location" name="location" readonly placeholder="Your location will appear here">
+    
+            <label for="field">Field of Interest</label>
+            <select id="field" name="field" required>
+                <option value="modeling">Modeling</option>
+                <option value="acting">Acting</option>
+                <option value="voiceover">Voiceover</option>
+                <option value="crew">Crew</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+    
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number">
+    
+            <button type="submit">Submit</button>
+        </form>
+    
+        <div class="privacy">
+            <p>We value your privacy. Your information will only be used for casting notifications and will never be shared without your consent.</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -2,6 +2,10 @@
     --main:rgba(62, 6, 205, 0.982);
     --background:white;
     --text-over-main:white;
+    --second:blueviolet;
+}
+html{
+    font-size:1vw;
 }
 html, body {
     margin: 0;
@@ -22,6 +26,12 @@ h2{
     font-weight:400;
     font-size:2.75em;
 }
+p{
+    font-size:1.5em;
+}
+p,h3{
+    font-family:"Roboto", serif;
+}
 h6{
     font-size:1em;
     color:#989793;
@@ -31,22 +41,25 @@ h6{
     padding-bottom:5px;
     width:15px;
 }
-p{
-    font-size:1.5em;
-}
-p,h3{
-    font-family:"Roboto", serif;
+footer {
+    margin-top:50px;
+    font-size:0.65em;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 .menu{
     position: sticky;
     top:0;
     overflow: hidden;
-    background-color:white;
+    background-color:var(--background);
     color:black;
     display:flexbox;
     padding-bottom:20px;
     margin-right:30px;
     position:sticky;
+    z-index:2;
 }
 .menu img{
     float:left;
@@ -82,17 +95,17 @@ p,h3{
     margin: 0 auto; 
   }
 
-  .scroll-container::-webkit-scrollbar {
-    height: 5px;
-  }
+.scroll-container::-webkit-scrollbar {
+    height: 2px;
+}
 
-  .scroll-container::-webkit-scrollbar-thumb {
-    background-color: var(--main);
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color:#dfdfdf;
     border-radius: 4px;
-  }
+}
 
   .scroll-container::-webkit-scrollbar-thumb:hover {
-    background-color: var(--main);
+    background-color:#dfdfdf;
   }
 
   .card {
@@ -104,6 +117,7 @@ p,h3{
     width: 250px;
     flex: 0 0 auto;
     transition: transform 0.3s;
+    z-index:1;
   }
 
   .card:hover {
@@ -131,54 +145,19 @@ p,h3{
     font-size: 0.90em;
     color: #555;
   }
-#heading-text{
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 2s steps(30) alternate,blink 500ms steps(1000) normal 3s; 
-    border-right: 3px inset white;
-    animation-fill-mode: forwards;
-}
+
 .jobs-container #heading-text{
     text-align:center;
     font-family:'Courier New', Courier, monospace;
-    animation: typewriter 5s steps(30) alternate,blink 500ms steps(1000) normal 3s; 
+    animation: typewriter 3s steps(30) alternate,blink 500ms steps(500) normal 3s; 
     border-right: 3px inset black;
     animation-timeline:view(110px 0px);
-}
-@keyframes typewriter {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 55%;
-    }
-}
-
-@keyframes blink {
-    from {
-        border-color: white;
-    }
-    to {
-        border-color: transparent;
-    }
-}
-#join{
-    background-color:var(--main);
-    color:var(--text-over-main);
-    border-radius:3px;
-    height:25px;
-    width:100px;
-    border:none;
-}
-#join:hover{
-    background-color:blueviolet;
-    transition:0.2s;
 }
 .header{
     background-image:url(home.png);
     background-color: rgba(0, 0, 0, 0);
-    margin-top:0px;
-    margin:30px;
+    width:80%;
+    margin:auto;
     height:500px;
     padding:50px;
     padding-left:150px;
@@ -188,10 +167,12 @@ p,h3{
 }
 .brands{
     margin:50px;
+    margin-bottom:70px;
 }
 .brands p{
-    font-weight:bold;
-    font-size:0.65em;
+    font-weight:450;
+    font-size:0.75em;
+    letter-spacing:1.25px;
     text-align:center;
 }
 
@@ -200,7 +181,7 @@ p,h3{
     justify-content: center;
     align-items: center;
     gap:30px;
-    margin-top:30px;
+    margin-top:50px;
 }
 
 .images img,.hover-effect{
@@ -266,6 +247,261 @@ p,h3{
     height:100px;
     justify-content:center;
 }
+.timeline-container-left,.timeline-container-right,.timeline p, .timeline h6, .timeline h2, .timeline img{
+	animation:fade-in linear;
+	animation-timeline:view(700px 0px);
+	}
+    .cta,.browse,.talent{
+        margin-left:80px;
+        margin-right:80px;
+        justify-content:space-around;
+        margin-top:50px;
+        padding:20px;
+        width:85%;
+        background-color:#5669E9;
+        color:white;
+        border-radius:10px;
+    }
+    #castingFormContainer input,#castingFormContainer label,#castingFormContainer button,#castingFormContainer select,#castingFormContainer,#hr1,.bigger-container{
+        animation:fade-in linear;
+        animation-timeline:view(850px 0px);
+        }
+    .cta p,.cta h1,.cta h3{
+        width:70%;
+        margin:auto;
+        text-align:center;
+    }
+    .cta p{
+        margin-top:30px;
+        font-weight:300;
+        font-size:1.25em;
+    }
+    .browse{
+        background-image:url(browse.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:40%;
+        text-align:left;
+        padding:50px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:80px;
+    }
+    .browse h1,.browse p,.browse button{
+        margin-left:40px;
+    }
+    .content h1{
+        color:var(--main);
+    }
+    .jobs-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .jobs-container h1{
+        text-align:center;
+    }
+    .job-card p{
+        font-size:1em;
+    }
+    .job-card h3{
+        font-size:1.5em;
+    }
+    .job-section {
+        display: flex;
+        align-items: center;
+    }
+    .job-section:hover{
+        background-color:black;
+        color:white;
+        .job-card{color:black;}
+        .category-label{width:50px;transition:0.2s;};
+        transition:0.3s;
+    }
+    .category-label {
+        background-color: black;
+        width:30px;
+        height:250px;
+        color: white;
+        padding: 10px;
+        margin-right: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1em;
+        border-radius:5px;
+    }
+    .category-label p{
+        padding:auto;
+    }
+    .scrollable {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+    
+    .scrollable::-webkit-scrollbar {
+        height: 0px;
+    }
+    
+    .scrollable::-webkit-scrollbar-thumb {
+        background-color: blueviolet;
+        border-radius: 5px;
+    }
+    
+    .scrollable::-webkit-scrollbar-track {
+        background: #ddd;
+    }
+    
+    .job-card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .job-card h3 {
+        margin: 0 0 10px;
+    }
+    
+    .scrollable button, .job-card label {
+        background-color: #3e06cd;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .scrollable button:hover,.job-card label:hover{
+        background-color: #5a37e3;
+    }
+    .category-label p{
+        font-size:0.5em;
+    }
+    .job-card label{
+        font-family:"Roboto",serif;
+        font-size:0.80em;
+        cursor: pointer;
+        margin-top:20px;
+    }
+    .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 30px;
+        padding-top:15px;
+        padding-bottom:40px;
+        border-radius: 5px;
+        width: 90%; 
+        text-align:center;
+        max-width: 600px; 
+    }
+    .talent{
+        background-image: url('https://d3uscstcbhvk7k.cloudfront.net/static/d881bb256421bc022256.jpg');
+        height:60%;
+        text-align:left;
+        padding-left:110px;
+        vertical-align: bottom;
+        background-size:cover;
+        margin:auto;
+    }
+    .talent-text{
+        padding-top:50px;
+        width:50%;
+    }
+    .talent h1{
+        text-shadow:black 2px 2px 5px;
+    }
+    .timeline {
+        width:90%;
+        margin:auto;
+    }
+    .timeline h1{
+        text-align:center;
+    }
+    .timeline hr{
+        width:60%;
+        background-color: black;
+    }
+    .timeline-container-left,.timeline-container-right{
+        display:flex;
+        height:50%;
+        margin:50px;
+    }
+    .timeline-text{
+        width:50%;
+        margin:auto;
+    }
+    .timeline-container-right img{
+        gap:20px;
+        align-items:right;
+        height:250px;
+        margin:auto;
+        margin-right:0px
+    }
+    .timeline-container-left img{
+        height:250px;
+        margin:auto;
+    }
+    .timeline p{
+        font-size:1em;
+        line-height: 20px;
+    }
+    .connect{
+        width:80%;
+        margin:auto;
+        display:flex;
+        background-color:#fece0c;
+        border-radius:15px;
+        padding:30px;
+        gap:20px;
+        align-items: baseline;
+    }
+    .connect p{
+        margin:auto;
+    }
+    
+#heading-text{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(30) alternate,blink 500ms steps(1000) normal 3s; 
+    border-right: 3px inset white;
+    animation-fill-mode: forwards;
+}
+#join{
+    background-color:var(--main);
+    color:var(--text-over-main);
+    border-radius:3px;
+    height:25px;
+    width:100px;
+    border:none;
+}
+#join:hover{
+    background-color:var(--second);
+    transition:0.2s;
+}
+#hr1{
+    background-color: white;
+    height:1px;
+    width:90%;
+    border:none;
+    position:absolute;
+}
 .section #quote{
     width:80%;
     text-align:center;
@@ -274,27 +510,6 @@ p,h3{
 .section #actor{
     font-size:1em;
     font-weight:bold;
-}
-.cta,.browse,.talent{
-    margin-left:80px;
-    margin-right:80px;
-    justify-content:space-around;
-    margin-top:50px;
-    padding:20px;
-    width:85%;
-    background-color:#5669E9;
-    color:white;
-    border-radius:10px;
-}
-.cta p,.cta h1,.cta h3{
-    width:70%;
-    margin:auto;
-    text-align:center;
-}
-.cta p{
-    margin-top:30px;
-    font-weight:300;
-    font-size:1.25em;
 }
 #cast{
     margin-top:30px;
@@ -305,16 +520,6 @@ p,h3{
     background-color:black;
     border-radius:10px;
     border:none;
-}
-.browse{
-    background-image:url(browse.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:40%;
-    text-align:left;
-    padding:50px;
-    margin-left:auto;
-    margin-right:auto;
 }
 .browse #cast{
     position:absolute;
@@ -329,6 +534,70 @@ p,h3{
     color:black;
     transition:0.2s;
 } 
+.talent #cast{
+    font-weight:bold;
+    background-color:#fece0c;
+    color:black;
+}
+.talent #cast:hover{
+    background-color:#ffd83d;
+}
+.connect #cast{
+    margin:auto;
+    height:60px;
+}
+.bigger-container{
+    margin-top:0px;
+    width:100%;
+
+}
+#castingFormContainer{
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto; 
+    display: none;
+    background-image: linear-gradient(to bottom left, black, blueviolet);
+    color:white;
+}
+#castingFormContainer label{
+    color:white;
+    font-size:1.25em;
+    padding-top:10px;
+    font-family:"Roboto",sans-serif;
+}
+#castingFormContainer input,select,option{
+    width:95%;
+}
+#castingFormContainer input, select{
+    height:20px;
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#castingFormContainer select{
+    height:45px;
+    width:100%;
+}
+#castingFormContainer button{
+    background-color:#fece0c;
+    margin:10px auto;
+}
+#castingFormContainer button:hover{
+    background-color:#ffd83d;
+}
+.privacy p{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family:Arial;
+}
 form{
     height:90%;
     font-size:0.75em;
@@ -357,7 +626,7 @@ form .container-text{
     margin-left:auto;
     margin-right:auto;
 }
-  input[type=text], input[type=password] {
+input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -365,40 +634,35 @@ form .container-text{
     border: none;
     background: #f1f1f1;
 }
-
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
-
 form hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
 form button {
-  background-color:var(--main);
-  color: white;
+  background-color:#fece0c;
+  color: black;
   padding: 14px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   text-align:center;
 }
-
 form .signupbtn:hover{
-  background-color:blueviolet;
+  background-color:#ffd83d;
   }
 form .cancelbtn:hover {
   background-color:white;
   color:black;
 }
-
 form .cancelbtn {
   padding: 14px 20px;
   background-color: black;
+  color:white;
 }
-
 form .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
@@ -410,222 +674,29 @@ form a{
     color:white;
     font-size:0.75em;
 }
-footer {
-    margin-top:50px;
-    font-size:0.65em;
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-.content h1{
-    color:var(--main);
-}
-.jobs-container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-.jobs-container h1{
-    text-align:center;
-}
-.job-card p{
-    font-size:1em;
-}
-.job-card h3{
-    font-size:1.5em;
-}
-.job-section {
-    display: flex;
-    align-items: center;
-}
-.job-section:hover{
-    .category-label{width:40px;transition:0.2s;};
-}
-.category-label {
-    background-color: black;
-    width:30px;
-    height:250px;
-    color: white;
-    padding: 10px;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1em;
-    border-radius:5px;
-}
-.category-label p{
-    padding:auto;
-}
-.scrollable {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px 0;
-}
-
-.scrollable::-webkit-scrollbar {
-    height: 2px;
-}
-
-.scrollable::-webkit-scrollbar-thumb {
-    background-color: blueviolet;
-    border-radius: 5px;
-}
-
-.scrollable::-webkit-scrollbar-track {
-    background: #ddd;
-}
-
-.job-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    min-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.job-card h3 {
-    margin: 0 0 10px;
-}
-
-.scrollable button, .job-card label {
-    background-color: #3e06cd;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.scrollable button:hover,.job-card label:hover{
-    background-color: #5a37e3;
-}
-.category-label p{
-    font-size:0.5em;
-}
-.job-card label{
-    font-family:"Roboto",serif;
-    font-size:0.80em;
-    cursor: pointer;
-    margin-top:20px;
-}
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 30px;
-    padding-top:15px;
-    padding-bottom:40px;
-    border-radius: 5px;
-    width: 90%; 
-    text-align:center;
-    max-width: 600px; 
-}
 input[type="checkbox"]{
     display: none;
 }
 input[type="checkbox"]:checked + .modal{
     display: block;
 }
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-.talent{
-    background-image: url('https://d3uscstcbhvk7k.cloudfront.net/static/d881bb256421bc022256.jpg');
-    height:60%;
-    text-align:left;
-    padding-left:110px;
-    vertical-align: bottom;
-    background-size:cover;
-    margin:auto;
-}
-.talent-text{
-    padding-top:50px;
-    width:50%;
-}
-.talent h1{
-    text-shadow:black 2px 2px 5px;
-}
-.talent #cast{
-    font-weight:bold;
-    background-color:#fece0c;
-    color:black;
-}
-.talent #cast:hover{
-    background-color:#ffd83d;
-}
-.timeline {
-    width:90%;
-    margin:auto;
-}
-.timeline h1{
-    text-align:center;
-}
-.timeline hr{
-    width:60%;
-    background-color: black;
-}
-.timeline-container-left,.timeline-container-right{
-    display:flex;
-    height:50%;
-    margin:50px;
-}
-.timeline-text{
-    width:50%;
-    margin:auto;
-}
-.timeline-container-right img{
-    gap:20px;
-    align-items:right;
-    height:250px;
-    margin:auto;
-    margin-right:0px;
-}
-.timeline-container-left img{
-    height:250px;
-    margin:auto;
-}
-.timeline p{
-    font-size:1em;
-}
-.connect{
-    width:80%;
-    margin:auto;
-    display:flex;
-    background-color:#fece0c;
-    border-radius:15px;
-    padding:30px;
-    gap:20px;
-    align-items: baseline;
-}
-.connect p{
-    margin:auto;
-}
-.connect #cast{
-    margin:auto;
-    height:60px;
-}
-.timeline-container-left,.timeline-container-right,.timeline p, .timeline h6, .timeline h2, .timeline img{
-	animation:fade-in linear;
-	animation-timeline:view(700px 0px);
-	}
+@keyframes typewriter {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 55%;
+        }
+    }
+    
+@keyframes blink {
+        from {
+            border-color: white;
+        }
+        to {
+            border-color: transparent;
+        }
+    }
 @keyframes fade-in{
 	from{scale:0;opacity:0;}
 	to{scale:1;opacity:1;}
