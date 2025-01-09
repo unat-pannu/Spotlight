@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-                xmlns:ns="https://spotlight-tau-three.vercel.app/" 
-                exclude-result-prefixes="xsl ns" 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:ns="https://spotlight-tau-three.vercel.app/"
+                exclude-result-prefixes="xsl ns"
                 version="1.0">
+
   <xsl:output method="html" indent="yes"/>
   <xsl:param name="filter" select="'all'"/>
   <xsl:template match="/">
@@ -61,14 +62,13 @@
                 font-family: "Roboto", sans-serif;
             }
             form{
-                text-align:right;
-                font-size:0.8rem;
-                margin-bottom:0;
-                margin-top:0;
+              text-align:right;
+              font-size:0.8rem;
+              margin-bottom:0;
             }
             select{
-                font-size:0.8rem;
-            }
+              font-size:0.8rem;
+              }
         </style>
       </head>
       <body>
@@ -81,16 +81,15 @@
           <p><strong>Description: </strong> <xsl:value-of select="/ns:job-listing/ns:info/ns:description"/></p>
           <p><strong>Dates: </strong> <xsl:value-of select="/ns:job-listing/ns:info/ns:dates"/></p>
         </div>
-
         <h2>Roles Available</h2>
         <form method="get">
-          <label for="filter">Filter by Role Type: </label>
+          <label for="filter">Filter by Role Type:</label>
           <select name="filter" id="filter" onchange="applyFilter()">
             <option value="all">All Roles</option>
             <option value="Lead">Lead Roles</option>
+            <option value="Supporting">Supporting Roles</option>
           </select>
         </form>
-
         <table id="rolesTable">
           <tr>
             <th>Role Name</th>
@@ -98,18 +97,26 @@
             <th>Age Range</th>
             <th>Description</th>
           </tr>
-          <xsl:apply-templates select="/ns:job-listing/ns:role"/>
+          <xsl:for-each select="/ns:job-listing/ns:role">
+            <xsl:sort select="ns:name" order="ascending"/>
+            <xsl:choose>
+              <xsl:when test="$filter = 'all' or ns:type = $filter">
+                <xsl:if test="string-length(ns:description) &gt; 50">
+                  <xsl:apply-templates select="."/>
+                </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:for-each>
         </table>
-
         <script>
           function applyFilter() {
             var filterValue = document.getElementById("filter").value;
             var tableRows = document.querySelectorAll("#rolesTable tr");
-
             for (var i = 1; i &lt; tableRows.length; i++) {
               var row = tableRows[i];
-              var roleType = row.cells[1].textContent.trim().toLowerCase();
-
+              var roleType = row.cells[1].textContent.trim().toLowerCase(); // Trim and convert to lowercase
               if (filterValue === 'all' || roleType === filterValue.toLowerCase()) {
                 row.style.display = '';
               } else {
@@ -122,35 +129,11 @@
     </html>
   </xsl:template>
   <xsl:template match="ns:role">
-    <xsl:if test="$filter = 'all' or ns:type = $filter">
-      <tr>
-        <td><xsl:value-of select="ns:name"/></td>
-        <td>
-          <xsl:choose>
-            <xsl:when test="ns:type = 'Lead'">
-              <xsl:value-of select="ns:type"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="ns:type"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </td>
-        <td>
-          <xsl:choose>
-            <xsl:when test="ns:age &lt; 18">
-              <span style="color: red;">Under 18</span>
-            </xsl:when>
-            <xsl:when test="ns:age &gt; 60">
-              <span style="color: blue;">Over 60</span>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="ns:age"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </td>
-        <td><xsl:value-of select="ns:description"/></td>
-      </tr>
-    </xsl:if>
+    <tr>
+      <td><xsl:value-of select="ns:name"/></td>
+      <td><xsl:value-of select="ns:type"/></td>
+      <td><xsl:value-of select="ns:age"/></td>
+      <td><xsl:value-of select="ns:description"/></td>
+    </tr>
   </xsl:template>
-
 </xsl:stylesheet>
