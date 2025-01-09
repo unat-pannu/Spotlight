@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="styles.xsl" type="text/xsl"?>
+<job-listing xmlns="https://spotlight-tau-three.vercel.app/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <info>
+        <title>"TERMINAL" Feature Film</title>
+        <location>Location will be discussed with selected candidates.</location>
+        <description>Casting and seeking crew for upcoming feature crime-thriller project.</description>
+        <dates>Shoots internationally in 2025.</dates>
+    </info>
+    <role>
+        <name>Charlotte</name>
+        <type>Lead</type>
+        <gender>Female</gender>
+        <age>21-40</age>
+        <description>An investigator entangled in a gripping murder mystery. The story follows her intense battle with a cunning serial killer, a conflict that forces her to confront and unleash her own dark side.</description>
+        <ethnicity>All Ethnicities</ethnicity>
+        <skills>Weapons Training: Firearms Training</skills>
+        <language>English</language>
+        <req-media>Headshot and Video Reel</req-media>
+    </role>
+    <role>
+        <name>Caroline</name>
+        <type>Lead</type>
+        <gender>Female</gender>
+        <age>18-35</age>
+        <description>The main villain of the story. Looking for someone who can play strong emotions.</description>
+        <ethnicity>All Ethnicities</ethnicity>
+        <language>English</language>
+        <req-media>Headshot/Photo</req-media>
+    </role>
+    <role>
+        <name>Ben</name>
+        <type>Lead</type>
+        <gender>Male</gender>
+        <age>21-40</age>
+        <description>A dedicated police officer and a loyal friend who finds himself entangled in a complex case that tests his resolve. Adding to the turmoil, he becomes caught in an emotional love triangle, forcing him to navigate both personal and professional challenges.</description>
+        <ethnicity>All Ethnicities</ethnicity>
+        <language>English and Spanish</language>
+        <req-media>Headshot/Photo</req-media>
+    </role>
+    <role>
+        <name>Abigail</name>
+        <type>Supporting</type>
+        <gender>All Genders</gender>
+        <age>18+</age>
+        <description>A pivotal character connected to the main case as one of the victims. This is a strong supporting role that demands an actor capable of portraying deep, complex emotions and conveying the lasting impact of her experience.</description>
+        <ethnicity>All Ethnicities</ethnicity>
+        <language>English</language>
+        <req-media>Headshot/Photo</req-media>
+    </role>
+</job-listing>
