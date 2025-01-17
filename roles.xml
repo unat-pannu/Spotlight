@@ -48,4 +48,24 @@
         <language>English</language>
         <req-media>Headshot/Photo</req-media>
     </role>
+        <role>
+        <name>Abigail</name>
+        <type>Supporting</type>
+        <gender>All Genders</gender>
+        <age>18+</age>
+        <description>A pivotal character connected to the main case as one of the victims. This is a strong supporting role that demands an actor capable of portraying deep, complex emotions and conveying the lasting impact of her experience.</description>
+        <ethnicity>All Ethnicities</ethnicity>
+        <language>English</language>
+        <req-media>Headshot/Photo</req-media>
+    </role>
+        <role>
+        <name>Winston</name>
+        <type>Supporting</type>
+        <gender>Male, Gender-Nonconforming, Non-Binary, Trans Male</gender>
+        <age>50-70</age>
+        <description>An introverted dreamer with a sentimental attachment to his life and surroundings. Deeply dependent on his wife, Claire, Winston struggles with change and avoids difficult conversations. He carries an emotional weight that he ultimately learns to process. Requires an actor with a wide emotional range to portray vulnerability, frustration, and eventual acceptance.</description>
+        <ethnicity>Any Ethnicity</ethnicity>
+        <language>English</language>
+        <req-media>Headshot/Photo, Video Reel</req-media>
+    </role>
 </job-listing>
