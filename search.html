@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight - Browse Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Girassol&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Talent Casting Search</title>
+    <style>
+        body{background-color: black;
+        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    padding-top:40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: black;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: black;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#locationInput {
+    padding: 12px;
+    width: 50%;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    font-size: 1.1em;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#locationInput:focus {
+    border-color:blueviolet;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.results-container div {
+    background-color: #ecf0f1;
+    color:black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+.results-container h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+.results-container p {
+    font-size: 1.1em;
+    color: black;
+}
+
+.results-container p span {
+    font-weight: bold;
+    color: black;
+}
+
+.no-results {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+.results-container div:hover {
+    background-color: #5a37e3;
+    color: white;
+    transform: translateY(-5px);
+    h3{color: white;
+        transition:0.1s;}
+    p{color:white} 
+    p span{color:white;}
+}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <div class="menu-items">
+            <li><a href="spotlightanimation.html"><img src="logo.png"></a></li>
+            <li><a href="index.html"><button><i class="fas fa-home"></i>&nbsp;&nbsp;Home</button></a></li>
+            <li><a href="lab3.html"><button><i class="fas fa-info-circle"></i>&nbsp;&nbsp;About</button></a></li>
+            <li><a href="jobs.html"><button><i class="fas fa-briefcase"></i> &nbsp;&nbsp;Browse Jobs</button></a></li>
+            <li><a href="talent.html"><button><i class="fas fa-users"></i>&nbsp;&nbsp;Browse Talent</button></a></li>
+            </div>
+            <div class="forms-menu">
+                <li><a href="signin.html"><button><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Sign in</button></a></li>
+                <li><a href="register.html"><button id="join"><i class="fas fa-user-plus"></i> &nbsp;&nbsp;Join Spotlight</button></a></li>
+            </div>
+        </ul>
+    </div>
+    <br><br><br><br><br>
+    <div class="container">
+        <header>
+            <h1>Talent Casting Search</h1>
+            <p>Find casting calls based on location and role.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="locationInput" placeholder="Search by Location..." />
+        </div>
+
+        <div id="searchResults" class="results-container"></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Spotlight. All rights reserved.</p>
+    </footer>
+    <script>
+    document.getElementById('locationInput').addEventListener('keyup', function () {
+    var location = this.value.trim().toLowerCase();
+    if (location.length > 2) { 
+        fetch('talents.json') 
+            .then(response => response.json())
+            .then(data => {
+                var results = '';
+                var found = false;
+                data.forEach(casting => {
+                    if (casting.location.toLowerCase().includes(location)) {
+                        found = true;
+                        results += `<div>
+                            <h3>${casting.role}</h3>
+                            <p><span>Production:</span> ${casting.production}</p>
+                            <p><span>Location:</span> ${casting.location}</p>
+                            <p><span>Talent Type:</span> ${casting.type}</p>
+                        </div>`;
+                    }
+                });
+                if (!found) {
+                    document.getElementById('searchResults').innerHTML = '<p class="no-results">No casting calls found in this location.</p>';
+                } else {
+                    document.getElementById('searchResults').innerHTML = results;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching casting calls:', error);
+                document.getElementById('searchResults').innerHTML = '<p class="no-results">Error fetching casting information.</p>';
+            });
+    } else {
+        document.getElementById('searchResults').innerHTML = ''; // Clear results
+    }
+});
+</script>
+</body>
+</html>
