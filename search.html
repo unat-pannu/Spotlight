@@ -140,7 +140,7 @@ header p {
     document.getElementById('locationInput').addEventListener('keyup', function () {
     var location = this.value.trim().toLowerCase();
     if (location.length > 2) { 
-        fetch('talents.json') 
+        fetch('jobs.json') 
             .then(response => response.json())
             .then(data => {
                 var results = '';
