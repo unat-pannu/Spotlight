@@ -1,4 +1,4 @@
-{"jobs":[
+[
     {"role": "Actor","production": "Shakespearean Play","location": "New York","type": "Male, 25-40 years old"},
     {"role": "Dancer","production": "Broadway Musical","location": "Los Angeles","type": "Female, 18-30 years old"},
     {"role": "Singer","production": "Pop Music Video","location": "Miami","type": "Any gender, 20-30 years old"},
@@ -9,4 +9,4 @@
     {"role": "Choreographer","production": "Dance Performance","location": "San Francisco","type": "Female, 25-40 years old"},
     {"role": "Photographer","production": "Ad Campaign","location": "London","type": "Any gender, 30-50 years old"},
     {"role": "Makeup Artist","production": "Film Set","location": "Los Angeles","type": "Any gender, 25-40 years old"}
-]}
+]
