@@ -1,7 +1,7 @@
 var app = angular.module("talentApp", []);
 app.controller("TalentController", function ($scope, $http) {
     $scope.sortBy = "name";
-    $scope.limit = 6;
+    $scope.limit = 10;
     $scope.selectedTalent = null;
     $http.get("talents.json").then(function (response) {
         $scope.talents = response.data;

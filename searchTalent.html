@@ -144,6 +144,11 @@
         select:focus {
     border-color: #9089FF;
     box-shadow: 0 0 5px rgba(199, 199, 199, 0.5);
+}   
+label{
+    text-align:center;
+    padding-left:50px;
+    
 }
 
         hr{width:20%;height:2px;border:none;background-color:#9089FF;}
@@ -185,15 +190,28 @@
             <option value="name">Name</option>
             <option value="joining_date">Joining Date</option>
         </select>
+    
+        <label><strong>Category:</strong></label>
+        <select ng-model="selectedCategory">
+            <option value="">All</option>
+            <option value="Musician">Musician</option>
+            <option value="Dancer">Dancer</option>
+            <option value="Model">Model</option>
+            <option value="Actor">Actor</option>
+            <option value="Voice Actor">Voice Actor</option>
+        </select>
     </div>    
+    
     <div class="talent-list">
-        <div class="talent-card" ng-repeat="talent in talents | orderBy:sortBy | limitTo:limit" 
+        <div class="talent-card" 
+             ng-repeat="talent in talents | orderBy:sortBy | filter:{ category: selectedCategory } | limitTo:limit" 
              ng-click="openModal(talent)">
             <img class="talent-image" ng-src="{{ talent.image }}" alt="{{ talent.name }}">
             <div class="talent-name">{{ talent.name }}</div>
             <div class="talent-category">{{ talent.category }}</div>
         </div>
     </div>
+
     <div class="modal-overlay" ng-if="selectedTalent">
         <div class="modal-content animate-outline">
             <span class="close-btn" ng-click="closeModal()">&times;</span>

@@ -64,6 +64,38 @@
         "bio": "International fashion model with experience in editorial, commercial, and lifestyle photography.",
         "skills": ["Posing", "Fashion Campaigns", "Body Movement"],
         "contact": "will.gao@email.com"
+    },
+    {
+        "name": "Liam Carter",
+        "category": "Musician",
+        "rate": 250,
+        "joining_date": "2020-09-15T00:00:00Z",
+        "location": "Nashville, TN",
+        "image": "https://images.pexels.com/photos/5542716/pexels-photo-5542716.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Guitarist and singer-songwriter with experience in live performances and studio recordings.",
+        "skills": ["Guitar", "Vocals", "Songwriting"],
+        "contact": "liam.carter@email.com"
+    },
+    {
+        "name": "Natalie Brooks",
+        "category": "Dancer",
+        "rate": 180,
+        "joining_date": "2021-12-03T00:00:00Z",
+        "location": "Chicago, IL",
+        "image": "https://images.pexels.com/photos/163469/pylon-flight-girl-model-163469.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Professional ballet and contemporary dancer performing in theater and live shows.",
+        "skills": ["Ballet", "Contemporary Dance", "Choreography"],
+        "contact": "natalie.brooks@email.com"
+    },
+    {
+        "name": "Sarah Miles",
+        "category": "Musician",
+        "rate": 250,
+        "joining_date": "2020-09-15T00:00:00Z",
+        "location": "Nashville, TN",
+        "image": "https://images.pexels.com/photos/2531728/pexels-photo-2531728.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Guitarist and singer-songwriter with experience in live performances and studio recordings.",
+        "skills": ["Guitar", "Vocals", "Songwriting"],
+        "contact": "liam.carter@email.com"
     }
 ]
-
