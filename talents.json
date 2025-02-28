@@ -1,62 +1,69 @@
 [
     {
-        "role": "Actor",
-        "production": "Shakespearean Play",
-        "location": "New York",
-        "type": "Male, 25-40 years old"
+        "name": "Emily Johnson",
+        "category": "Actor",
+        "rate": 200,
+        "joining_date": "2023-05-12T00:00:00Z",
+        "location": "Los Angeles, CA",
+        "image": "https://images.pexels.com/photos/5378685/pexels-photo-5378685.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Versatile actress with experience in drama and action films. Passionate about storytelling and character development.",
+        "skills": ["Method Acting", "Screen Presence", "Improvisation"],
+        "contact": "emily.johnson@email.com"
     },
     {
-        "role": "Dancer",
-        "production": "Broadway Musical",
-        "location": "Los Angeles",
-        "type": "Female, 18-30 years old"
+        "name": "Michael Smith",
+        "category": "Voice Actor",
+        "rate": 150,
+        "joining_date": "2022-11-08T00:00:00Z",
+        "location": "New York, NY",
+        "image": "https://images.pexels.com/photos/6626882/pexels-photo-6626882.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Experienced voice actor known for dynamic range in animation, audiobooks, and commercials.",
+        "skills": ["Character Voices", "Narration", "Dubbing"],
+        "contact": "michael.smith@email.com"
     },
     {
-        "role": "Singer",
-        "production": "Pop Music Video",
-        "location": "Miami",
-        "type": "Any gender, 20-30 years old"
+        "name": "Sophia Lee",
+        "category": "Model",
+        "rate": 300,
+        "joining_date": "2021-06-20T00:00:00Z",
+        "location": "Miami, FL",
+        "image": "https://images.pexels.com/photos/7275385/pexels-photo-7275385.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Runway and editorial model featured in top fashion campaigns. Skilled in posing and brand representation.",
+        "skills": ["Runway", "Editorial", "Brand Endorsements"],
+        "contact": "sophia.lee@email.com"
     },
     {
-        "role": "Model",
-        "production": "Fashion Show",
-        "location": "Paris",
-        "type": "Female, 18-25 years old"
+        "name": "Jennifer Wilson",
+        "category": "Actor",
+        "rate": 200,
+        "joining_date": "2023-05-12T00:00:00Z",
+        "location": "Los Angeles, CA",
+        "image": "https://images.pexels.com/photos/7013617/pexels-photo-7013617.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Stage and film actress with strong background in classical theater and modern drama.",
+        "skills": ["Stage Performance", "Dialogue Delivery", "Voice Projection"],
+        "contact": "jennifer.wilson@email.com"
     },
     {
-        "role": "Actor",
-        "production": "Action Movie",
-        "location": "London",
-        "type": "Male, 30-45 years old"
+        "name": "Martin Douglas",
+        "category": "Voice Actor",
+        "rate": 150,
+        "joining_date": "2022-11-08T00:00:00Z",
+        "location": "New York, NY",
+        "image": "https://images.pexels.com/photos/6475046/pexels-photo-6475046.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "Deep-toned voice artist specializing in trailers, radio ads, and podcasts.",
+        "skills": ["Deep Narration", "Audio Editing", "Podcast Hosting"],
+        "contact": "martin.douglas@email.com"
     },
     {
-        "role": "Comedian",
-        "production": "Comedy Show",
-        "location": "Chicago",
-        "type": "Any gender, 25-40 years old"
-    },
-    {
-        "role": "Voice Actor",
-        "production": "Animated Movie",
-        "location": "Los Angeles",
-        "type": "Any gender, 18-40 years old"
-    },
-    {
-        "role": "Choreographer",
-        "production": "Dance Performance",
-        "location": "San Francisco",
-        "type": "Female, 25-40 years old"
-    },
-    {
-        "role": "Photographer",
-        "production": "Ad Campaign",
-        "location": "London",
-        "type": "Any gender, 30-50 years old"
-    },
-    {
-        "role": "Makeup Artist",
-        "production": "Film Set",
-        "location": "Los Angeles",
-        "type": "Any gender, 25-40 years old"
+        "name": "Will Gao",
+        "category": "Model",
+        "rate": 300,
+        "joining_date": "2021-06-20T00:00:00Z",
+        "location": "Miami, FL",
+        "image": "https://images.pexels.com/photos/7654096/pexels-photo-7654096.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "bio": "International fashion model with experience in editorial, commercial, and lifestyle photography.",
+        "skills": ["Posing", "Fashion Campaigns", "Body Movement"],
+        "contact": "will.gao@email.com"
     }
 ]
+
