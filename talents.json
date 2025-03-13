@@ -11,12 +11,12 @@
         "contact": "emily.johnson@email.com"
     },
     {
-        "name": "Michael Smith",
+        "name": "Alice May",
         "category": "Voice Actor",
         "rate": 150,
         "joining_date": "2022-11-08T00:00:00Z",
         "location": "New York, NY",
-        "image": "https://images.pexels.com/photos/6626882/pexels-photo-6626882.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "image": "https://images.pexels.com/photos/5878808/pexels-photo-5878808.jpeg?auto=compress&cs=tinysrgb&w=800",
         "bio": "Experienced voice actor known for dynamic range in animation, audiobooks, and commercials.",
         "skills": ["Character Voices", "Narration", "Dubbing"],
         "contact": "michael.smith@email.com"
