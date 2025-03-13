@@ -20,9 +20,10 @@
             font-family: 'Roboto',sans-serif;
         }
         p{font-size:1em;}
+        form{font-size:1em}
         .menu{padding-top:10px;z-index:1000;}
         .menu ul li a{color:black;align-items: baseline;}
-        .forms menu li{padding-right:20px}
+        #join{margin-top:11px;}
         .bg-image {
             background-image: url('form.png'); 
             background-size: cover;
@@ -31,7 +32,7 @@
             height: 100vh;
             width: 50%;
         }
-
+        .forms-menu{margin-right:20px;}
         .form-container {
             display: flex;
             align-items: center;
@@ -86,7 +87,6 @@
     </div>
     <div class="container-fluid p-0 m-0 form-container">
         <div class="bg-image d-none d-md-block"></div>
-        
         <div class="registration-form">
             <div class="card shadow-sm">
                 <div class="card-body">
@@ -115,15 +115,15 @@
                         <button type="submit" class="custom-btn">Register</button>
                     </form>
                     <div class="text-center mt-3">
-                        <p>Already have an account? <a href="#">Login here</a></p>
+                        <p>Already have an account? <a href="signin.html">Login here</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="registration.js"></script>
 </body>
 </html>

@@ -3,9 +3,14 @@
   "experience": "Worked in theater and short films for 5 years.",
   "projects": [
     {
-      "id": "1741876093090",
+      "id": "1741880918839",
       "title": "Oppenheimer - Feature Film",
-      "description": "Worked as an AD in Christopher Nolan's Oppenheimer (2020)"
+      "description": "Worked as an AD on Christopher Nolan's Oppenheimer (2020)"
+    },
+    {
+      "id": "1741880930992",
+      "title": "The Imitation Game",
+      "description": "Played Betsy in The Imitation Game (2015)"
     }
   ]
 }

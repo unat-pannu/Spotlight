@@ -1,55 +1,153 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Girassol&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-    footer{position:sticky;bottom:0;width:100%;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+        }
+        .menu {
+            padding-top: 10px;
+            z-index: 1000;
+        }
+        .menu ul li a {
+            color: black;
+            align-items: baseline;
+        }
+        .bg-image {
+            background-image: url('https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=800');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 50%;
+        }
+        .form-container {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-form {
+            padding: 40px;
+            width: 50%;
+        }
+        .card {
+            border: none;
+            width: 100%;
+        }
+        .custom-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .custom-btn:hover {
+            background-color: rgba(62, 6, 205, 0.982);
+            transition: 0.2s;
+        }
+        .custom-btn:focus {
+            outline: none;
+        }
+        a {
+            color: rgba(62, 6, 205, 0.982);
+        }
+        a:hover {
+            color: gray;
+            text-decoration: none;
+        }
+        p {font-size: 16px;}
+        button {font-size: 14px;}
+    </style>
 </head>
 <body>
-  <div class="menu">
-    <ul>
-        <div class="menu-items">
-        <li><a href="spotlightanimation.html"><img src="logo.png"></a></li>
-        <li><a href="index.html"><button><i class="fas fa-home"></i>&nbsp;&nbsp;Home</button></a></li>
-        <li><a href="lab3.html"><button><i class="fas fa-info-circle"></i>&nbsp;&nbsp;About</button></a></li>
-        <li><a href="jobs.html"><button><i class="fas fa-briefcase"></i> &nbsp;&nbsp;Browse Jobs</button></a></li>
-        <li><a href="talent.html"><button><i class="fas fa-users"></i>&nbsp;&nbsp;Browse Talent</button></a></li>
-        </div>
-        <div class="forms-menu">
-            <li><a href="signin.html"><button><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Sign in</button></a></li>
-            <li><a href="register.html"><button id="join"><i class="fas fa-user-plus"></i> &nbsp;&nbsp;Join Spotlight</button></a></li>
-        </div>
-    </ul>
-</div>
-<form action="" method="post">
-  <div class="container">
-    <div class="container-text">
-    <h1 class="headings">Sign In to Spotlight</h1>
-    <hr>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" minlength=8 required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
-    </label>
-    <a href=""><p>Forgot Password?</p></a>
-      <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
-      <button type="submit" class="signupbtn" name="signup_submit">Sign In</button>
+    <div class="menu">
+        <ul>
+            <div class="menu-items">
+                <li><a href="spotlightanimation.html"><img src="logo.png"></a></li>
+                <li><a href="index.html"><button><i class="fas fa-home"></i>&nbsp;&nbsp;Home</button></a></li>
+                <li><a href="lab3.html"><button><i class="fas fa-info-circle"></i>&nbsp;&nbsp;About</button></a></li>
+                <li><a href="jobs.html"><button><i class="fas fa-briefcase"></i> &nbsp;&nbsp;Browse Jobs</button></a></li>
+                <li><a href="talent.html"><button><i class="fas fa-users"></i>&nbsp;&nbsp;Browse Talent</button></a></li>
+            </div>
+        </ul>
     </div>
-  </div>
-</form>
-<footer>
-    <p>&copy; 2024 Spotlight. All rights reserved.</p>
-</footer>
+    <div class="container-fluid p-0 m-0 form-container">
+        <div class="bg-image d-none d-md-block"></div>
+        <div class="login-form">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Login</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                            <small><a href="forgot-password.html">Forgot Password?</a></small>
+                        </div>
+                        <button type="submit" class="custom-btn">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="register.html">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    $("form").submit(function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const email = $("#email").val().trim();
+        const password = $("#password").val().trim();
+
+        // Simple validation
+        if (!email || !password) {
+            alert("Please fill in both email and password fields.");
+            return;
+        }
+
+        // Sending POST request to the server for login
+        $.ajax({
+            url: "http://localhost:3000/login",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ email, password }),
+            success: function (response) {
+                if (response.success) {
+                    // Store user data in local storage for profile usage
+                    localStorage.setItem("user", JSON.stringify(response.user));
+                    // Redirect to profile.html automatically
+                    window.location.href = "profile.html";
+                } else {
+                    alert(response.message);
+                }
+            },
+            error: function (xhr) {
+                const errorMessage = xhr.responseJSON?.message || "Login failed. Please try again.";
+                alert(errorMessage);
+            }
+        });
+    });
+});
+
+    </script>
 </body>
-<html>
+</html>
